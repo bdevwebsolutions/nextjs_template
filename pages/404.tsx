@@ -3,17 +3,15 @@ import React from 'react';
 import {H1, ThemeButton, BodyContainer} from '../components';
 import Link from 'next/link';
 
-const Home: NextPage = () => {
+const FourOFour: NextPage = () => {
   return (
     <BodyContainer>
       <ThemeButton/>
-      <H1>TEMPLATE</H1>
-      <Link href="/protected">PROTECTED (requires login, protected route)</Link>
-      <Link href="/login">LOGIN</Link>
+      <H1>404</H1>
+      <p>PAGE NOT FOUND</p>
+      <Link href="/">HOME</Link>
     </BodyContainer>
   )
 }
 
-
-
-export default Home
+export default FourOFour

@@ -4,7 +4,14 @@ import { ThemeButton } from "./functional/themeButton";
 
 
 export {
+    //containers
     BodyContainer,
-    H1,
+
+    //functional
     ThemeButton,
+
+    //markup
+    H1,
+    //global
+
 }

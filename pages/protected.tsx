@@ -3,6 +3,7 @@ import React from 'react';
 import {H1, ThemeButton, BodyContainer} from '../components';
 import { withAuthHOC } from '../hoc/withAuth';
 import { StoreContext } from '../context/store';
+import { withFooterAndHeaderHOC } from '../hoc';
 
 const Protected: NextPage = () => {
 
@@ -17,4 +18,4 @@ const Protected: NextPage = () => {
   )
 }
 
-export default withAuthHOC(Protected)
+export default withFooterAndHeaderHOC(withAuthHOC(Protected))

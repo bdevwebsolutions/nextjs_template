@@ -10,6 +10,9 @@ import { StoreContext } from '../context/store';
 //Nextjs
 import Link from 'next/link';
 
+//HOC
+import { withFooterAndHeaderHOC } from '../hoc';
+
 const Login: NextPage = () => {
 
   const {connected, toggleConnected} = React.useContext(StoreContext);  
@@ -24,4 +27,4 @@ const Login: NextPage = () => {
   )
 }
 
-export default Login
+export default withFooterAndHeaderHOC(Login)

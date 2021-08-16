@@ -1,9 +1,34 @@
+//MAIN _APP FILE
+
+//Styling
+import "nprogress/nprogress.css";
 import '../styles/globals.css'
-import type { AppProps } from 'next/app';
 import {GlobalStyle} from '../styles/globalStyle';
+
+//Nprogress
+import NProgress from 'nprogress';
+import {Router} from 'next/router';
+
+//_app 
+import type { AppProps } from 'next/app';
+
+//Context
 import StoreProvider from '../context/store';
 import Theme from '../providers/themeProvider';
+import { withBannerHOC, withFooterAndBannerHOC, withFooterHOC } from "../hoc/withReusedComponents";
 
+
+
+NProgress.configure({
+  minimum: 0.2,
+  showSpinner: false,
+  easing: "ease",
+  speed: 800,
+})
+
+Router.events.on('routeChangeStart', () => {NProgress.start()})
+Router.events.on('routeChangeComplete', () => {NProgress.done()})
+Router.events.on('routeChangeError', () => {NProgress.done()})
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -17,4 +42,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   </StoreProvider>
   )
 }
+
+//WITH BANNER 
 export default MyApp
+
+
+//WITHOUT BANNER

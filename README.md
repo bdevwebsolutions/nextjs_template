@@ -11,6 +11,13 @@ Nextjs base with typescript support
 - Theme based on the two theme objects under /styles/theme.ts
 - GlobalStyle
 
+#### MISC PACKAGES
+- React Spring: Animation library
+- Formik: form library
+- Recharts: Charting library
+- i18-react and i18next: Internationalization framework: translations etc
+- react-use: collection of react hooks
+
 #### 3: Context
 * Store Context
     - theme: theme variable: "light" | "dark"
@@ -19,6 +26,7 @@ Nextjs base with typescript support
     - toggleConnected: toggles the connected state
 #### 4: HOC's
 * withAuth: Checks if the connected bool from the store context is true, this allow a route to  be viewed
+* withHeader, withFooter and withFooterAndHeader: injects a header at the top and a footer at the bottom of the page
 
 #### 5: Components
 ##### 5.1: Container

@@ -12,4 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     *{
         transition-duration: 0.2s;
     }
+
+    button{
+        cursor: pointer;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0px;
+    }
 `

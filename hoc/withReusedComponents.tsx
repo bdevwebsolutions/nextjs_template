@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { BodyContainer } from '../components'
 
 //@ts-ignore
 export const withHeaderHOC = WrappedComponent => props => {
 
     return (
-        <>
+        <BodyContainer>
             <Banner>BANNER</Banner>
             <WrappedComponent {...props}/>
-        </>
+        </BodyContainer>
     )
 
 }
@@ -16,21 +17,21 @@ export const withHeaderHOC = WrappedComponent => props => {
 //@ts-ignore
 export const withFooterHOC = WrappedComponent => props => {
     return(
-        <>
+        <BodyContainer>
             <WrappedComponent {...props}/>
             <Footer>FOOTER</Footer>
-        </>
+        </BodyContainer>
     )
 }
 
 //@ts-ignore
 export const withFooterAndHeaderHOC = (WrappedComponent) => props => {
     return(
-        <>
+        <BodyContainer>
             <Banner>BANNER</Banner>
             <WrappedComponent {...props}/>
             <Footer>FOOTER</Footer>
-        </>
+        </BodyContainer>
     )
 
 }

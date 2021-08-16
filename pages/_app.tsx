@@ -4,6 +4,7 @@
 import "nprogress/nprogress.css";
 import '../styles/globals.css'
 import {GlobalStyle} from '../styles/globalStyle';
+import { BodyContainer } from "../components";
 
 //Nprogress
 import NProgress from 'nprogress';
@@ -15,7 +16,7 @@ import type { AppProps } from 'next/app';
 //Context
 import StoreProvider from '../context/store';
 import Theme from '../providers/themeProvider';
-import { withBannerHOC, withFooterAndBannerHOC, withFooterHOC } from "../hoc/withReusedComponents";
+
 
 
 
@@ -37,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   <StoreProvider>
     <GlobalStyle/>
     <Theme>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </Theme>
   </StoreProvider>
   )

@@ -10,16 +10,23 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     *{
-        transition-duration: 0.2s;
+        
     }
 
     button{
         cursor: pointer;
+        padding: 8px 10px;
+        outline: none;
+        border: none;
     }
 
     ul{
         list-style-type: none;
         padding: 0;
         margin: 0px;
+    }
+
+    a{
+        display: inline-block;
     }
 `

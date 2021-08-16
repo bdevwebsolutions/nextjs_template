@@ -10,11 +10,11 @@ const Protected: NextPage = () => {
     const {toggleConnected} = React.useContext(StoreContext);  
 
   return (
-    <BodyContainer>
+    <>
       <ThemeButton/>
       <H1>PROTECTED</H1>
       <button onClick={toggleConnected}>LOGOUT</button>
-    </BodyContainer>
+    </>
   )
 }
 

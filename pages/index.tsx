@@ -6,7 +6,7 @@ import { withFooterAndHeaderHOC } from '../hoc';
 
 const Home: NextPage = () => {
   return (
-    <BodyContainer>
+    <>
       <ThemeButton/>
       <H1>TEMPLATE</H1>
       <Link href="/protected">PROTECTED (requires login, protected route)</Link>
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <li>1</li>
         <li>2</li>
       </ul>
-    </BodyContainer>
+    </>
   )
 }
 

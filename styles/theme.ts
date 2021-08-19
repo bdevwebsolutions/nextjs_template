@@ -1,13 +1,13 @@
 export const light = {
     color: {
         primary: "white",
-        secondary: "black"
+        secondary: "#212529"
     }
 }
 
 export const dark = {
     color: {
-        primary: "black",
+        primary: "#212529",
         secondary: "white",
     }
 }
